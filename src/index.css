@@ -1,0 +1,163 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 8%;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 24px;
+}
+
+.navbar nav a {
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.navbar nav a.active {
+  color: #4f46e5;
+}
+
+.page {
+  max-width: 1050px;
+  margin: 40px auto;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.subtitle,
+.page p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 18px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 7px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 26px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tab {
+  padding: 12px 16px;
+  color: #6b7280;
+  font-weight: 600;
+  border-bottom: 3px solid transparent;
+}
+
+.tab.active {
+  color: #4f46e5;
+  border-bottom-color: #4f46e5;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f9fafb;
+  color: #4b5563;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.processing {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.shipped {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.delivered {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px;
+  }
+
+  .page {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .tabs {
+    gap: 0;
+  }
+
+  .tab {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+}
